@@ -50,12 +50,12 @@ def home():
 <p>A prototype API for distant reading of science fiction novels.</p>'''
 
 
-@app.route('/api/songs/all', methods=['GET'])
+@app.route('/api/tedTalks/all', methods=['GET'])
 def api_all():
     return jsonify(tedTalks)
 
 
-@app.route('/api/songs/random', methods=['GET'])
+@app.route('/api/tedTalks/random', methods=['GET'])
 def api_id():
     results = []
     r = random.randint(1,9)
